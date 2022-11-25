@@ -1,0 +1,22 @@
+<!--クリックした場所にマーカーを設置(削除機能は作り途中)-->
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>map</title>
+</head>
+<body>
+    <div id="map" style="width:1200px; height:500px"></div>
+
+    <script type="text/javascript" src="script01.js">
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBC264eI5sBuPvIP1tcCxV6jWRuoHIZCdo&callback=initMap">
+    </script>
+    
+    <input type="button" value="ブース削除" onclick="del()" />  
+    <input type="button" value="設置したマーカーの座標を順番に表示" onclick="disp()" />  
+
+</body>
+</html>
